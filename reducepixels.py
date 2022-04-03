@@ -7,6 +7,7 @@ reduced_size = (canvas_expanded.size[0]//3, canvas_expanded.size[1]//3)
 canvas = Image.new('RGBA', reduced_size, (0, 0, 0, 0))
 
 # Loop through every 3rd pixel starting on the 2nd of each axis
+print("Reducing pixels...")
 for x in range(1, canvas_expanded.size[0], 3):
     for y in range(1, canvas_expanded.size[1], 3):
         color = canvas_expanded.getpixel((x, y))
@@ -15,3 +16,4 @@ for x in range(1, canvas_expanded.size[0], 3):
         canvas.putpixel((new_x, new_y), color)
 
 canvas.save('canvas.png')
+print("Complete!")

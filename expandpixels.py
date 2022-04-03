@@ -7,6 +7,7 @@ expanded_size = (canvas.size[0]*3, canvas.size[1]*3)
 canvas_expanded = Image.new('RGBA', expanded_size, (0, 0, 0, 0))
 
 # Loop through every pixel
+print("Expanding pixels...")
 for x in range(canvas.size[0]):
     for y in range(canvas.size[1]):
         color = canvas.getpixel((x, y))
@@ -16,3 +17,4 @@ for x in range(canvas.size[0]):
         canvas_expanded.putpixel((new_x, new_y), color)
 
 canvas_expanded.save('template.png')
+print("Complete!")
