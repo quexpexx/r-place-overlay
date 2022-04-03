@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the canvas!
-// @author       oralekin - script, Quexpexx#6969 - image
+// @author       oralekin - script, Quexpexx#6969, Cale111#1234 - image, python script
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
