@@ -1,10 +1,11 @@
 from PIL import Image, ImagePalette
 
 # Open canvas file and calculate expanded size
-canvas = Image.open('canvas.png')
+canvas = Image.open('canvas.png').convert("P", palette=Image.ADAPTIVE)
 expanded_size = (canvas.size[0]*3, canvas.size[1]*3)
 # Get palette colors
 canvaspalette = canvas.getpalette('RGBA')
+print(canvaspalette)
 canvaspalette[3] = 0 # Hacky, but I really don't know why it doesn't give 0. Especially when it's transparent in my editor.
 # Create expanded image, blank
 canvas_expanded = Image.new('P', expanded_size, 0)
