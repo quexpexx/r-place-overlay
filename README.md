@@ -1,3 +1,8 @@
+# Thanks everyone for the great time on r/place.
+
+
+# Original README --------------------
+
 # What is this?
 It's a userscript that, following a specific template, puts an overlay over your r/place canvas for what a pixel *should* be.
 # How do I install it?
