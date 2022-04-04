@@ -1,7 +1,7 @@
 from PIL import Image
 
 # Open large template file and calculate reduced size
-canvas_expanded = Image.open('template.png')
+canvas_expanded = Image.open('template.png').convert("P", palette=Image.Palette.ADAPTIVE)
 reduced_size = (canvas_expanded.size[0]//3, canvas_expanded.size[1]//3)
 # Get palette colors
 canvaspalette = canvas_expanded.getpalette('RGBA')
