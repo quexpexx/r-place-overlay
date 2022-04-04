@@ -12,7 +12,7 @@ So you don't have to keep wondering where to place a pixel, what color it should
 1. Fork this repo.
 2. Modify the link in `userscript.user.js` to the correct direct link (your fork's link) to `template.png`
 2. Edit `canvas.png`, it's an image of the entire canvas. Place your pixels on the correct positions.
-3. Run 'expandpixels.py` (pillow is a dependency). It should convert your `canvas.png` file to a `template.png`
+3. Run `expandpixels.py` (pillow is a dependency). It should convert your `canvas.png` file to a `template.png`
 4. Add all the modified files, commit your changes, and push them.
 # For contributors
 If you've changed `canvas.png`, make sure you run `expandpixels.py` to get a proper `template.png`. Add both `canvas.png` and `template.png` into your pull request.  
