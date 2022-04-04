@@ -1,7 +1,7 @@
 from PIL import Image, ImagePalette
 
 # Open canvas file and calculate expanded size
-canvas = Image.open('canvas.png')
+canvas = Image.open('canvas.png').convert("P", palette=Image.Palette.ADAPTIVE)
 expanded_size = (canvas.size[0]*3, canvas.size[1]*3)
 # Get palette colors
 canvaspalette = canvas.getpalette('RGBA')
